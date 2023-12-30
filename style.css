@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+    background:url(./to-do-list-background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:fixed;
+}
+h1 {
+    background-image: linear-gradient(to right, rgb(0, 255, 0), rgb(255, 0, 0));
+    color:transparent;
+    background-clip: text;
+    margin-top: 5%;
+}
+main {
+    backdrop-filter: blur(10px);
+    width:70%;
+    margin: auto;
+    border-radius: 20px;
+    border: none;
+}
+
+.to-do-container {
+    width:70%;
+    margin: auto;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.input-area {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+#text-area {
+    height: 3rem;
+    width:60%;
+    margin: 3%;
+    border: none;
+    border-radius: 10px;
+    background:rgba(255, 255, 255, 0.493);
+}
+
+#add-list {
+    height: 3rem;
+    width:15%;
+    font-size: xx-large;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#add-list:active {
+    background-color: rgba(255, 255, 255, 0.693);
+}
+
+#delete-img {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+#delete-img:hover {
+    transform: scale(1.2);
+}
+
+.checklist-section {
+    width:70%;
+    margin: auto;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 3%;
+    padding-bottom:5%;
+}
+.checkbox {
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width:30px;
+    height: 30px;
+    margin:2%;
+}
+.checklist {
+    width:70%;
+    height: 2.5rem;
+    margin:2%;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    color:black;
+    padding:10px 20px;
+    text-align: left;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+@media(width<800px) {
+    .checklist {
+        height: 1.5rem;
+        padding:0px 20px;
+        border-radius: 5px;
+    }
+    .checkbox {
+        width:15px;
+        height: 15px;
+    }
+    #delete-img {
+        width:20px ;
+        height: 20px;
+    }
+    #text-area , #add-list {
+        height: 1.5rem;
+        padding: 0%;
+        text-align: center;
+    }
+    #add-list {
+        font-size: medium;
+        width: 10%;
+    }
+}
