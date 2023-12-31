@@ -90,7 +90,7 @@ main {
 }
 .checklist {
     width:70%;
-    height: 2.5rem;
+    min-height: 2.5rem;
     margin:2%;
     border-radius: 10px;
     background-color: white;
@@ -98,7 +98,11 @@ main {
     color:black;
     padding:10px 20px;
     text-align: left;
+    font-weight: bold;
+    font-size: 1.2rem;
+    scrollbar-width: 0px;
 }
+
 
 .strike {
     text-decoration: line-through;

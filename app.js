@@ -5,7 +5,7 @@ const deleteBtn = document.querySelector("#delete-img");
 let checkboxId = 0;
 
 addBtn.addEventListener("click", () => {
-    let to_do_list = document.createElement("h3");
+    let to_do_list = document.createElement("textarea");
     let input_type_checkbox = document.createElement("input");
     const edit = document.createElement("img");
 
@@ -54,6 +54,8 @@ const textManipulation = (to_do_list, input_type_checkbox, edit) => {
 
     edit.src = "./edit.png";
     edit.style.cursor = "pointer";
+    edit.style.width = "8%";
+    edit.style.height = "8%";
     listarea.appendChild(edit);
     const edit_input = document.createElement("input");
     edit_input.type = "text";
